@@ -2,7 +2,7 @@
   "Name": "align",
   "Description": "aligns multiple cursors",
   "Tags": ["align"],
-  "Website": "github.com/mosskjohnson/align-plugin",
+  "Website": "https://github.com/mosskjohnson/align-plugin",
   "License": "MIT",
   "Versions": [
     {
