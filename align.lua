@@ -30,10 +30,10 @@ end
 function align(bp)
     local cursors = bp.Buf:GetCursors()
     if cursors then
-        local furthestX = max(map(cursors, function(cursor) return cursor:GetVisualX() end))
+        local furthestX = max(map(cursors, function(cursor) return cursor:GetVisualX(false) end))
         for i = 1, #cursors do
             local cursor = cursors[i]
-            bp.Buf:insert(-cursor.Loc, string.rep(" ", furthestX - cursor:GetVisualX()))
+            bp.Buf:insert(-cursor.Loc, string.rep(" ", furthestX - cursor:GetVisualX(false)))
         end
         micro.InfoBar():Message("Aligned cursors.")
     else
