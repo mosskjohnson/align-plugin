@@ -1,6 +1,10 @@
 # align
 
-Simple plugin to align multiple cursors in micro.
+Plugin to align multiple cursors in micro.
+
+## Demo
+
+https://asciinema.org/a/610576
 
 ## Command
 
@@ -17,7 +21,3 @@ No keybindings exist by default. However, you can easily add a binding in the `b
     "Alt-&": "lua:align.align"
 }
 ```
-
-## Demo
-
-https://asciinema.org/a/610576
